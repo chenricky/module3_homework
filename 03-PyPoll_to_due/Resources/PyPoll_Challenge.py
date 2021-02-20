@@ -23,7 +23,7 @@ county = set()
 candidate = set()
 
 # Add a variable to load a file from a path.
-# file_to_load = os.path.join("Resources", "election_results.csv")
+# file_to_load = os.path.join("Resources", "election_election_resultss.csv")
 file_to_load = os.path.join("election_results.csv")
 
 
@@ -49,7 +49,7 @@ print("the list of candidate is:")
 print(candidate) 
   
 
-f = open("result.txt", "a")
+f = open("election_results.txt", "a")
 f.write("\n")
 f.write(" ")
 f.write("\n")
@@ -58,13 +58,13 @@ f.write("\n")
 f.close()
 for i in county:
     # print(i)
-    f = open("result.txt", "a")
+    f = open("election_results.txt", "a")
     f.write(i)
     f.write("\n")
     f.close()
 
 
-f = open("result.txt", "a")
+f = open("election_results.txt", "a")
 f.write("\n")
 f.write(" ")
 f.write("\n")
@@ -73,7 +73,7 @@ f.write("\n")
 f.close()
 for i in candidate:
     # print(i)
-    f = open("result.txt", "a")
+    f = open("election_results.txt", "a")
     f.write(i)
     f.write("\n")
     f.close()
@@ -104,27 +104,27 @@ with open(file_to_load) as csv_file:
        elif line[1] == "Denver" and "Raymon" in line[2]:
            count_Denver_Raymon =  count_Denver_Raymon + 1
 print("\n")
-print("the final result for Arapahoe county is:")
+print("the final election_results for Arapahoe county is:")
 print("\n")
 print("Total votes in Arapahoe county voted Chalres is " + str(count_Arapahoe_Charles_Casper_Stockham))
 print("Total votes in Arapahoe county voted Diana is " + str(count_Arapahoe_Diana_DeGette))
 print("Total votes in Arapahoe county voted Raymon is " + str(count_Arapahoe_Raymon))
 
 print("\n")
-print("the final result for Jefferson county is:")
+print("the final election_results for Jefferson county is:")
 print("\n")
 print("Total votes in Jefferson county voted Chalres is " + str(count_Jefferson_Charles_Casper_Stockham))
 print("Total votes in Jefferson county voted Diana is " + str(count_Jefferson_Diana_DeGette))
 print("Total votes in Jefferson county voted Raymon is " + str(count_Jefferson_Raymon))
 
 print("\n")
-print("the final result for Denver county is:")
+print("the final election_results for Denver county is:")
 print("\n")
 print("Total votes in Denver county voted Chalres is " + str(count_Denver_Charles_Casper_Stockham))
 print("Total votes in Denver county voted Diana is " + str(count_Denver_Diana_DeGette))
 print("Total votes in Denver county voted Raymon is " + str(count_Denver_Raymon))
 
-f = open("result.txt", "a")
+f = open("election_results.txt", "a")
 f.write("\n")
 f.write(" ")
 f.write("\n")
@@ -168,25 +168,26 @@ print("\n")
 
 totalVotes =  raymonTotal + dianaTotal + charlesTotal
 
-f = open("result.txt", "a")
+
+f = open("election_results.txt", "a")
 f.write(" ")
 f.write("\n")
 f.write("total votes for Raymon are: " + str(raymonTotal))
 f.write("\n")
-f.write("Raymon won: " + "{0:.0%}".format( raymonTotal/totalVotes) )
+f.write("Raymon won: " + "{0:.0%}".format(raymonTotal/totalVotes) )
 f.write("\n")
 
 f.write(" ")
 f.write("\n")
 f.write("total votes for Diana are: " + str(dianaTotal))
 f.write("\n")
-f.write("Diana won: " + "{0:.0%}".format( dianaTotal/totalVotes) )
+f.write("Diana won: " + "{0:.0%}".format(dianaTotal/totalVotes) )
 f.write("\n")
 f.write(" ")
 f.write("\n")
 f.write("total votes for Charles are: " + str(charlesTotal))
 f.write("\n")
-f.write("Charles won: " + "{0:.0%}".format( charlesTotal/totalVotes) )
+f.write("Charles won: " + "{0:.0%}".format( charlesTotal/totalVotes ) )
 f.write("\n")
 
 f.close()

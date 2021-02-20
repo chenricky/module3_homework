@@ -1,15 +1,15 @@
 
  
 Below the list of county:
+Denver
 Jefferson
 Arapahoe
-Denver
 
  
 Below the list of candidate:
 Raymon Anthony Doane
-Charles Casper Stockham
 Diana DeGette
+Charles Casper Stockham
 
  
 Total votes in Jefferson county voted Chalres is 19723
