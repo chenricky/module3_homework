@@ -1,9 +1,31 @@
 
-Total votes in Jefferson county voted Chalres is 19723
-Total votes in Jefferson county voted Diana is 17963
+ 
+Below the list of county:
 Arapahoe
 Jefferson
 Denver
+
+ 
+Below the list of candidate:
 Raymon Anthony Doane
 Diana DeGette
 Charles Casper Stockham
+
+ 
+Total votes in Jefferson county voted Chalres is 19723
+Total votes in Jefferson county voted Diana is 17963
+Total votes in Jefferson county voted Raymon is 1169
+ 
+Total votes in Arapahoe county voted Chalres is 8302
+Total votes in Arapahoe county voted Diana is 15647
+Total votes in Arapahoe county voted Raymon is 0
+ 
+Total votes in Denver county voted Chalres is 57188
+Total votes in Denver county voted Diana is 239282
+Total votes in Denver county voted Raymon is 9585
+ 
+total votes for Raymon are: 10754
+ 
+total votes for Diana are: 272892
+ 
+total votes for Charles are: 85213
