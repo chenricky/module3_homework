@@ -5,6 +5,7 @@
 import csv
 import os
 
+
 count_Jefferson_Charles_Casper_Stockham = 0
 count_Jefferson_Diana_DeGette  = 0
 count_Jefferson_Raymon = 0
@@ -14,6 +15,8 @@ count_Arapahoe_Charles_Casper_Stockham = 0
 count_Denver_Charles_Casper_Stockham = 0
 count_Denver_Diana_DeGette = 0
 count_Denver_Raymon = 0
+totalVotes = 0
+
 
 
 county = set()
@@ -163,18 +166,27 @@ print("total votes for Diana are: " + str(dianaTotal))
 print("\n")
 
 
+totalVotes =  raymonTotal + dianaTotal + charlesTotal
+
 f = open("result.txt", "a")
 f.write(" ")
 f.write("\n")
 f.write("total votes for Raymon are: " + str(raymonTotal))
 f.write("\n")
+f.write("Raymon won: " + "{0:.0%}".format( raymonTotal/totalVotes) )
+f.write("\n")
+
 f.write(" ")
 f.write("\n")
 f.write("total votes for Diana are: " + str(dianaTotal))
 f.write("\n")
+f.write("Diana won: " + "{0:.0%}".format( dianaTotal/totalVotes) )
+f.write("\n")
 f.write(" ")
 f.write("\n")
 f.write("total votes for Charles are: " + str(charlesTotal))
+f.write("\n")
+f.write("Charles won: " + "{0:.0%}".format( charlesTotal/totalVotes) )
 f.write("\n")
 
 f.close()
